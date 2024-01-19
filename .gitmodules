@@ -1,3 +1,3 @@
-[submodule "wwdc-blogs/themes/ananke"]
-	path = wwdc-blogs/themes/ananke
-	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
+[submodule "themes/doks"]
+	path = themes/doks
+	url = https://wouterwisse@github.com/gethyas/doks.git
