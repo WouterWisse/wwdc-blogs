@@ -25,7 +25,7 @@ hero:
     height: 80px
 
   title: "WWDC Blogs"
-  subtitle: "WWDC Session Videos, now seamlessly converted by AI into easily readable and searchable blog formats for your convenience."
+  subtitle: "WWDC Session Videos, but seamlessly converted by AI into easily readable and searchable blog formats for your convenience. Enjoy."
 
   image:
     path: "images" # path to image under configured assets directory. default 'images'

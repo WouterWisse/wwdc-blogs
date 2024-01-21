@@ -31,12 +31,13 @@ title = 'WWDC Blogs'
 [params]
 
   google_fonts = [
+    ["Lato"],
     ["Inter", "300, 400, 600, 700"],
     ["Fira Code", "500, 700"]
   ]
 
-  sans_serif_font = "Inter"     # Default is System font
-  secondary_font  = "Inter"     # Default is System font
+  sans_serif_font = "Lato"     # Default is System font
+  secondary_font  = "Lato"     # Default is System font
   mono_font       = "Fira Code" # Default is System font
 
     [params.footer]
