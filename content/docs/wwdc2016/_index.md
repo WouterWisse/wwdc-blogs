@@ -1,5 +1,5 @@
 +++
-weight = 3000
+weight = 8000
 date = "2016-06-13T10:00:00+01:00"
 draft = false
 author = "Wouter Wise"
