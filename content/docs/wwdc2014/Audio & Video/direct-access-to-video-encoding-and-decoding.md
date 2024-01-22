@@ -19,5 +19,4 @@ Hello world, this is a blog:
 let var = "Hello World."
 ```
 
-
 [**Original Video**](https://developer.apple.com/videos/play/wwdc2014/513/)
