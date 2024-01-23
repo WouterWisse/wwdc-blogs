@@ -5,7 +5,6 @@ from jinja2 import Environment, FileSystemLoader
 # Configuration variables
 output_directory = os.path.join('..', 'content', 'docs')
 json_file_path = os.path.join('data', 'wwdc_events.json')
-template_file_path = os.path.join('templates', 'event_index_template.md')
 
 # Create a Jinja2 environment with the template folder
 env = Environment(loader=FileSystemLoader('templates'))
@@ -14,7 +13,7 @@ with open(json_file_path, 'r') as json_file:
     events_data = json.load(json_file)
 
 # Load the template
-template = env.get_template('index_template.md')
+template = env.get_template('event_index_template.md')
 
 # Convert boolean values to lowercase strings in the JSON data
 for event in events_data['events']:

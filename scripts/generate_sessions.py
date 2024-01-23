@@ -6,7 +6,6 @@ from jinja2 import Environment, FileSystemLoader
 event_year = "2014"  # Set the year of the event here
 output_directory = os.path.join('..', 'content', 'docs', f'wwdc-{event_year}')
 json_file_path = os.path.join('data', f'wwdc_{event_year}_sessions.json')
-template_file_path = os.path.join('templates', 'session_index_template.md')
 
 # Create a Jinja2 environment with the template folder
 env = Environment(loader=FileSystemLoader('templates'))
@@ -15,22 +14,26 @@ with open(json_file_path, 'r') as json_file:
     events_data = json.load(json_file)
 
 # Load the template
-template = env.get_template('index_template.md')
+template = env.get_template('session_index_template.md')
 
-# Convert boolean values to lowercase strings in the JSON data
-for event in events_data['event']:
-    event['draft'] = str(event['draft']).lower()
-    event['toc'] = str(event['toc']).lower()
-
-for event_category in events_data['event']:
+for event_category in events_data.get('event', []):
     category_folder_name = event_category['category']['title'].lower().replace(" ", "-")
     category_output_path = os.path.join(output_directory, category_folder_name)
     os.makedirs(category_output_path, exist_ok=True)
 
-    for session in event_category['sessions']:
+    for session in event_category.get('sessions', []):
         session_folder_name = session['title'].lower().replace(" ", "-")
         session_output_path = os.path.join(category_output_path, session_folder_name)
         os.makedirs(session_output_path, exist_ok=True)
+
+        # Check if 'draft' key exists before accessing it
+        draft = session.get('draft', False)
+        session['draft'] = str(draft).lower()
+
+        # Convert 'toc' to lowercase string if it exists
+        toc = session.get('toc', False)
+        if toc is not False:
+            session['toc'] = str(toc).lower()
 
         # Render the template with session data
         index_content = template.render(session)
