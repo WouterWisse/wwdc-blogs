@@ -3,7 +3,7 @@ import json
 
 output_directory = os.path.join('..', 'content', 'docs')
 json_file_path = os.path.join('templates', 'wwdc_events.json')
-template_file_path = os.path.join('templates', 'template.md')
+template_file_path = os.path.join('templates', 'index_template.md')
 
 with open(json_file_path, 'r') as json_file:
     events_data = json.load(json_file)
