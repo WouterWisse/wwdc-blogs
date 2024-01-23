@@ -1,12 +1,12 @@
 +++
-weight = <WEIGHT>
-date = <DATE>
-draft = false
-author = <AUTHOR>
-title = <TITLE>
-icon = <ICON>
-toc = true
-description = <DESCRIPTION>
-publishdate = <PUBLISH_DATE>
-tags = <TAGS>
+weight = {{ weight }}
+date = "{{ date }}"
+draft = {{ draft }}
+author = "{{ author }}"
+title = "{{ title }}"
+icon = "{{ icon }}"
+toc = {{ toc }}
+description = "{{ description }}"
+publishdate = "{{ publishdate }}"
+tags = {{ tags }}
 +++

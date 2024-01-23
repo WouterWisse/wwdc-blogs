@@ -1,31 +1,35 @@
-# Define the template file path and output file path
-template_file = "templates/_index.md"
-output_file = "output.md"
+import os
+import json
 
-# Define the content to replace placeholders
-weight = 1000
-date = "2022-06-06T10:00:00+01:00"
-author = "Wouter Wise"
-title = "WWDC 2022"
-icon = "event"
-description = "Slogan WWDC 2022"
-publishdate = "2022-06-06T10:00:00+01:00"
-tags = "['WWDC2022']"
+output_directory = os.path.join('..', 'content', 'docs')
+json_file_path = os.path.join('templates', 'wwdc_events.json')
+template_file_path = os.path.join('templates', 'template.md')
 
-# Read the template file
-with open(template_file, "r") as file:
-    template_content = file.read()
+with open(json_file_path, 'r') as json_file:
+    events_data = json.load(json_file)
 
-# Replace placeholders with actual content
-template_content = template_content.replace("<WEIGHT>", weight)
-template_content = template_content.replace("<DATE>", date)
-template_content = template_content.replace("<AUTHOR>", author)
-template_content = template_content.replace("<TITLE>", title)
-template_content = template_content.replace("<ICON>", icon)
-template_content = template_content.replace("<DESCRIPTION>", description)
-template_content = template_content.replace("<PUBLISH_DATE>", publishdate)
-template_content = template_content.replace("<TAGS>", str(tags))
+with open(template_file_path, 'r') as template_file:
+    template_str = template_file.read()
 
-# Write the modified content to the output file
-with open(output_file, "w") as file:
-    file.write(template_content)
+for event in events_data['events']:
+    folder_name = event['title'].lower().replace(" ", "-")
+    output_path = os.path.join(output_directory, folder_name)
+    os.makedirs(output_path, exist_ok=True)
+
+    index_content = template_str.format(
+        weight=event['weight'],
+        date=event['date'],
+        draft=event['draft'],
+        author=event['author'],
+        title=event['title'],
+        icon=event['icon'],
+        toc=event['toc'],
+        description=event['description'],
+        publishdate=event['publishdate'],
+        tags=event['tags']
+    )
+
+    with open(os.path.join(output_path, '_index.md'), 'w') as index_file:
+        index_file.write(index_content)
+
+print(f"Folders and _index.md files created in '{output_directory}' successfully.")
