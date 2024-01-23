@@ -1,0 +1,155 @@
+{
+    "event": [
+        {
+            "category": {
+                "weight": 1,
+                "title": "Audio & Video",
+                "icon": "videocam"
+            },
+            "sessions": [
+                {
+                    "weight": 1,
+                    "date": "2014-06-07T10:00:00+01:00",
+                    "draft": false,
+                    "author": "Wouter Wisse",
+                    "title": "Direct Access to Video Encoding and Decoding",
+                    "icon": "videocam",
+                    "toc": true,
+                    "description": "Discover how to use AV Foundation and Video Toolbox to access hardware accelerated encoding and decoding services. Gain best practices for when it is appropriate to use a high-level or low-level API for encoding or decoding. Learn about multi-pass export for improved H.264 encoding and see how...",
+                    "publishdate": "2014-06-07T10:00:00+01:00",
+                    "tags": [
+                        "WWDC2014",
+                        "2014",
+                        "iOS",
+                        "macOS"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": {
+                "weight": 2,
+                "title": "Design",
+                "icon": "videogame_asset"
+            },
+            "sessions": [
+                {
+                    "weight": 1,
+                    "date": "2014-06-07T10:00:00+01:00",
+                    "draft": false,
+                    "author": "Wouter Wisse",
+                    "title": "Ingredients of Great Games",
+                    "icon": "videogame_asset",
+                    "toc": true,
+                    "description": "Kick off the game development sessions of WWDC 2014 by gaining insight into the key ingredients needed to create a great game for iOS. Understand the importance of harnessing the full capabilities of the platform to create a richer gameplay experience. Get practical guidance about game production...",
+                    "publishdate": "2014-06-07T10:00:00+01:00",
+                    "tags": [
+                        "WWDC2014",
+                        "2014",
+                        "iOS"
+                    ]
+                },
+                {
+                    "weight": 2,
+                    "date": "2014-06-07T10:00:00+01:00",
+                    "draft": false,
+                    "author": "Wouter Wisse",
+                    "title": "Prototyping: Fake It Till You Make It",
+                    "icon": "build",
+                    "toc": true,
+                    "description": "Make better apps by trying things out first, before you write any code. Get a glimpse of Apple's prototyping process and the range of tools and techniques we use, some of which might surprise you.",
+                    "publishdate": "2014-06-07T10:00:00+01:00",
+                    "tags": [
+                        "WWDC2014",
+                        "2014",
+                        "iOS",
+                        "macOS"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": {
+                "weight": 3,
+                "title": "Graphics & Games",
+                "icon": "videogame_asset"
+            },
+            "sessions": [
+                {
+                    "weight": 1,
+                    "date": "2014-06-07T10:00:00+01:00",
+                    "draft": false,
+                    "author": "Wouter Wisse",
+                    "title": "Working with Metal: Advanced",
+                    "icon": "videogame_asset",
+                    "toc": true,
+                    "description": "Building on the fundamentals, learn how to create advanced games and graphics applications with Metal. See how to construct your rendering pipeline, understand how to use compute and graphics together, and discover how to optimize your Metal-based app.",
+                    "publishdate": "2014-06-07T10:00:00+01:00",
+                    "tags": [
+                        "WWDC2014",
+                        "2014",
+                        "iOS"
+                    ]
+                },
+                {
+                    "weight": 2,
+                    "date": "2014-06-07T10:00:00+01:00",
+                    "draft": false,
+                    "author": "Wouter Wisse",
+                    "title": "Working with Metal: Fundamentals",
+                    "icon": "videogame_asset",
+                    "toc": true,
+                    "description": "Start learning how to code with Metal in this step-by-step walkthrough of basic scene rendering. See the code you need to get your first Metal-based application up and running. Explore how to create graphics and compute shaders and efficiently animate scenes.",
+                    "publishdate": "2014-06-07T10:00:00+01:00",
+                    "tags": [
+                        "WWDC2014",
+                        "2014",
+                        "iOS"
+                    ]
+                },
+                {
+                    "weight": 3,
+                    "date": "2014-06-07T10:00:00+01:00",
+                    "draft": false,
+                    "author": "Wouter Wisse",
+                    "title": "Working with Metal: Overview",
+                    "icon": "videogame_asset",
+                    "toc": true,
+                    "description": "Metal provides extremely efficient access to the graphics and compute power of the A7 chip. Get introduced to the essential concepts behind Metal, its low-overhead architecture, streamlined API, and unified shading language. See how Metal lets you take your iOS game or app to the next level of...",
+                    "publishdate": "2014-06-07T10:00:00+01:00",
+                    "tags": [
+                        "WWDC2014",
+                        "2014",
+                        "iOS"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": {
+                "weight": 4,
+                "title": "Safari & Web",
+                "icon": "devices"
+            },
+            "sessions": [
+                {
+                    "weight": 1,
+                    "date": "2014-06-07T10:00:00+01:00",
+                    "draft": false,
+                    "author": "Wouter Wisse",
+                    "title": "Adopting Handoff on iOS and OS X",
+                    "icon": "devices",
+                    "toc": true,
+                    "description": "Handoff allows people to seamlessly move activities between devices and pick up right where they left off. Learn how to save, transfer, and restore user activities in apps of all architectures. See how easy it is to add Handoff support to your iOS and OS X apps to make your user experience even...",
+                    "publishdate": "2014-06-07T10:00:00+01:00",
+                    "tags": [
+                        "WWDC2014",
+                        "2014",
+                        "iOS",
+                        "macOS"
+                    ]
+                }
+            ]
+        }
+    ]
+}
