@@ -5,7 +5,7 @@ from jinja2 import Environment, FileSystemLoader
 # Configuration variables
 output_directory = os.path.join('..', 'content', 'docs')
 json_file_path = os.path.join('templates', 'wwdc_events.json')
-template_file_path = os.path.join('templates', 'index_template.md')
+template_file_path = os.path.join('templates', 'event_index_template.md')
 
 # Create a Jinja2 environment with the template folder
 env = Environment(loader=FileSystemLoader('templates'))
