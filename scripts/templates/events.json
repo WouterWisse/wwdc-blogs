@@ -1,0 +1,154 @@
+{
+    "events": [
+        {
+            "weight": 10000,
+            "date": "2014-06-07T10:00:00+01:00",
+            "draft": false,
+            "author": "Wouter Wisse",
+            "title": "WWDC 2014",
+            "icon": "event",
+            "toc": true,
+            "description": "Slogan WWDC 2014",
+            "publishdate": "2014-06-07T10:00:00+01:00",
+            "tags": [
+                "WWDC2014",
+                "2014"
+            ]
+        },
+        {
+            "weight": 9000,
+            "date": "2015-06-07T10:00:00+01:00",
+            "draft": false,
+            "author": "Wouter Wisse",
+            "title": "WWDC 2015",
+            "icon": "event",
+            "toc": true,
+            "description": "Slogan WWDC 2015",
+            "publishdate": "2015-06-07T10:00:00+01:00",
+            "tags": [
+                "WWDC2015",
+                "2015"
+            ]
+        },
+        {
+            "weight": 8000,
+            "date": "2016-06-07T10:00:00+01:00",
+            "draft": false,
+            "author": "Wouter Wisse",
+            "title": "WWDC 2016",
+            "icon": "event",
+            "toc": true,
+            "description": "Slogan WWDC 2016",
+            "publishdate": "2016-06-07T10:00:00+01:00",
+            "tags": [
+                "WWDC2016",
+                "2016"
+            ]
+        },
+        {
+            "weight": 7000,
+            "date": "2017-06-07T10:00:00+01:00",
+            "draft": false,
+            "author": "Wouter Wisse",
+            "title": "WWDC 2017",
+            "icon": "event",
+            "toc": true,
+            "description": "Slogan WWDC 2017",
+            "publishdate": "2017-06-07T10:00:00+01:00",
+            "tags": [
+                "WWDC2017",
+                "2017"
+            ]
+        },
+        {
+            "weight": 6000,
+            "date": "2018-06-07T10:00:00+01:00",
+            "draft": false,
+            "author": "Wouter Wisse",
+            "title": "WWDC 2018",
+            "icon": "event",
+            "toc": true,
+            "description": "Slogan WWDC 2018",
+            "publishdate": "2018-06-07T10:00:00+01:00",
+            "tags": [
+                "WWDC2018",
+                "2018"
+            ]
+        },
+        {
+            "weight": 5000,
+            "date": "2019-06-07T10:00:00+01:00",
+            "draft": false,
+            "author": "Wouter Wisse",
+            "title": "WWDC 2019",
+            "icon": "event",
+            "toc": true,
+            "description": "Slogan WWDC 2019",
+            "publishdate": "2019-06-07T10:00:00+01:00",
+            "tags": [
+                "WWDC2019",
+                "2019"
+            ]
+        },
+        {
+            "weight": 4000,
+            "date": "2020-06-07T10:00:00+01:00",
+            "draft": false,
+            "author": "Wouter Wisse",
+            "title": "WWDC 2020",
+            "icon": "event",
+            "toc": true,
+            "description": "Slogan WWDC 2020",
+            "publishdate": "2020-06-07T10:00:00+01:00",
+            "tags": [
+                "WWDC2020",
+                "2020"
+            ]
+        },
+        {
+            "weight": 3000,
+            "date": "2021-06-07T10:00:00+01:00",
+            "draft": false,
+            "author": "Wouter Wisse",
+            "title": "WWDC 2021",
+            "icon": "event",
+            "toc": true,
+            "description": "Slogan WWDC 2021",
+            "publishdate": "2021-06-07T10:00:00+01:00",
+            "tags": [
+                "WWDC2021",
+                "2021"
+            ]
+        },
+        {
+            "weight": 2000,
+            "date": "2022-06-07T10:00:00+01:00",
+            "draft": false,
+            "author": "Wouter Wisse",
+            "title": "WWDC 2022",
+            "icon": "event",
+            "toc": true,
+            "description": "Slogan WWDC 2022",
+            "publishdate": "2022-06-07T10:00:00+01:00",
+            "tags": [
+                "WWDC2022",
+                "2022"
+            ]
+        },
+        {
+            "weight": 1000,
+            "date": "2023-06-07T10:00:00+01:00",
+            "draft": false,
+            "author": "Wouter Wisse",
+            "title": "WWDC 2023",
+            "icon": "event",
+            "toc": true,
+            "description": "Slogan WWDC 2023",
+            "publishdate": "2023-06-07T10:00:00+01:00",
+            "tags": [
+                "WWDC2023",
+                "2023"
+            ]
+        }
+    ]
+}
