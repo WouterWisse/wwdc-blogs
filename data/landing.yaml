@@ -43,7 +43,7 @@ hero:
     btnText: "Contribute"
     url: "https://www.github.com/wouterwisse/wwdc-blogs"
 
-  info: "**Open Source** MIT Licensed."
+  info: ""
 
 # Feature Grid
 featureGrid:
