@@ -8,7 +8,7 @@
             "title": "WWDC 2014",
             "icon": "event",
             "toc": true,
-            "description": "Slogan WWDC 2014",
+            "description": "Apple introduced iOS 8 with significant enhancements to user experience and app development, and announced OS X Yosemite with a redesigned interface and improved continuity features across Apple devices.",
             "publishdate": "2014-06-07T10:00:00+01:00",
             "tags": [
                 "WWDC2014",
@@ -23,7 +23,7 @@
             "title": "WWDC 2015",
             "icon": "event",
             "toc": true,
-            "description": "Slogan WWDC 2015",
+            "description": "The highlight was the unveiling of iOS 9, focusing on intelligence and proactivity, along with OS X El Capitan, which emphasized performance improvements and user experience refinements.",
             "publishdate": "2015-06-07T10:00:00+01:00",
             "tags": [
                 "WWDC2015",
@@ -38,7 +38,7 @@
             "title": "WWDC 2016",
             "icon": "event",
             "toc": true,
-            "description": "Slogan WWDC 2016",
+            "description": "Apple announced iOS 10 with major updates to Messages and Siri integration for third-party apps, and macOS Sierra, introducing Siri to Mac and the Universal Clipboard feature.",
             "publishdate": "2016-06-07T10:00:00+01:00",
             "tags": [
                 "WWDC2016",
@@ -53,7 +53,7 @@
             "title": "WWDC 2017",
             "icon": "event",
             "toc": true,
-            "description": "Slogan WWDC 2017",
+            "description": "The company introduced iOS 11 with a redesigned Control Center and App Store, and announced High Sierra for macOS, featuring significant improvements in storage, video, and graphics processing.",
             "publishdate": "2017-06-07T10:00:00+01:00",
             "tags": [
                 "WWDC2017",
@@ -68,7 +68,7 @@
             "title": "WWDC 2018",
             "icon": "event",
             "toc": true,
-            "description": "Slogan WWDC 2018",
+            "description": "Apple highlighted iOS 12 with performance boosts and Screen Time features, and macOS Mojave, introducing Dark Mode and a revamped Mac App Store.",
             "publishdate": "2018-06-07T10:00:00+01:00",
             "tags": [
                 "WWDC2018",
@@ -83,7 +83,7 @@
             "title": "WWDC 2019",
             "icon": "event",
             "toc": true,
-            "description": "Slogan WWDC 2019",
+            "description": "The event featured the debut of iOS 13 with Dark Mode and privacy enhancements, and the introduction of macOS Catalina, which eliminated iTunes in favor of dedicated media apps.",
             "publishdate": "2019-06-07T10:00:00+01:00",
             "tags": [
                 "WWDC2019",
@@ -98,7 +98,7 @@
             "title": "WWDC 2020",
             "icon": "event",
             "toc": true,
-            "description": "Slogan WWDC 2020",
+            "description": "Held virtually due to the COVID-19 pandemic, Apple announced iOS 14 with home screen widgets and App Library, and macOS Big Sur, which brought the biggest design overhaul in years, alongside the transition to Apple Silicon processors.",
             "publishdate": "2020-06-07T10:00:00+01:00",
             "tags": [
                 "WWDC2020",
@@ -113,7 +113,7 @@
             "title": "WWDC 2021",
             "icon": "event",
             "toc": true,
-            "description": "Slogan WWDC 2021",
+            "description": "This year's virtual conference showcased iOS 15 with focus mode and enhanced FaceTime capabilities, and macOS Monterey, featuring Universal Control and Shortcuts.",
             "publishdate": "2021-06-07T10:00:00+01:00",
             "tags": [
                 "WWDC2021",
@@ -128,7 +128,7 @@
             "title": "WWDC 2022",
             "icon": "event",
             "toc": true,
-            "description": "Slogan WWDC 2022",
+            "description": "Apple unveiled iOS 16 with a customizable lock screen and enhanced messaging features, along with macOS Ventura, introducing Stage Manager for multitasking and continued refinements to the user experience.",
             "publishdate": "2022-06-07T10:00:00+01:00",
             "tags": [
                 "WWDC2022",
@@ -143,7 +143,7 @@
             "title": "WWDC 2023",
             "icon": "event",
             "toc": true,
-            "description": "Slogan WWDC 2023",
+            "description": "Highlighted the release of iOS 17, introducing new AI-driven features and further integration across Apple's ecosystem, along with macOS 'Name', which offered advanced security features and deeper integration with Apple's hardware innovations.",
             "publishdate": "2023-06-07T10:00:00+01:00",
             "tags": [
                 "WWDC2023",
