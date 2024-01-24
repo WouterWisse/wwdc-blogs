@@ -23,7 +23,7 @@
             "title": "WWDC 2015",
             "icon": "event",
             "toc": true,
-            "description": "The highlight was the unveiling of iOS 9, focusing on intelligence and proactivity, along with OS X El Capitan, which emphasized performance improvements and user experience refinements.",
+            "description": "Apple introduced iOS 9, focusing on intelligence and proactivity, along with OS X El Capitan, which emphasized performance improvements and user experience refinements.",
             "publishdate": "2015-06-07T10:00:00+01:00",
             "tags": [
                 "WWDC2015",
@@ -53,7 +53,7 @@
             "title": "WWDC 2017",
             "icon": "event",
             "toc": true,
-            "description": "The company introduced iOS 11 with a redesigned Control Center and App Store, and announced High Sierra for macOS, featuring significant improvements in storage, video, and graphics processing.",
+            "description": "Apple introduced iOS 11 with a redesigned Control Center and App Store, and announced High Sierra for macOS, featuring significant improvements in storage, video, and graphics processing.",
             "publishdate": "2017-06-07T10:00:00+01:00",
             "tags": [
                 "WWDC2017",
@@ -83,7 +83,7 @@
             "title": "WWDC 2019",
             "icon": "event",
             "toc": true,
-            "description": "The event featured the debut of iOS 13 with Dark Mode and privacy enhancements, and the introduction of macOS Catalina, which eliminated iTunes in favor of dedicated media apps.",
+            "description": "Apple featured the debut of iOS 13 with Dark Mode and privacy enhancements, and the introduction of macOS Catalina, which eliminated iTunes in favor of dedicated media apps.",
             "publishdate": "2019-06-07T10:00:00+01:00",
             "tags": [
                 "WWDC2019",
@@ -98,7 +98,7 @@
             "title": "WWDC 2020",
             "icon": "event",
             "toc": true,
-            "description": "Held virtually due to the COVID-19 pandemic, Apple announced iOS 14 with home screen widgets and App Library, and macOS Big Sur, which brought the biggest design overhaul in years, alongside the transition to Apple Silicon processors.",
+            "description": "Apple held virtually due to the COVID-19 pandemic, announced iOS 14 with home screen widgets and App Library, and macOS Big Sur, which brought the biggest design overhaul in years, alongside the transition to Apple Silicon processors.",
             "publishdate": "2020-06-07T10:00:00+01:00",
             "tags": [
                 "WWDC2020",
@@ -113,7 +113,7 @@
             "title": "WWDC 2021",
             "icon": "event",
             "toc": true,
-            "description": "This year's virtual conference showcased iOS 15 with focus mode and enhanced FaceTime capabilities, and macOS Monterey, featuring Universal Control and Shortcuts.",
+            "description": "Apple's virtual conference showcased iOS 15 with focus mode and enhanced FaceTime capabilities, and macOS Monterey, featuring Universal Control and Shortcuts.",
             "publishdate": "2021-06-07T10:00:00+01:00",
             "tags": [
                 "WWDC2021",
@@ -143,7 +143,7 @@
             "title": "WWDC 2023",
             "icon": "event",
             "toc": true,
-            "description": "Highlighted the release of iOS 17, introducing new AI-driven features and further integration across Apple's ecosystem, along with macOS 'Name', which offered advanced security features and deeper integration with Apple's hardware innovations.",
+            "description": "Apple highlighted the release of iOS 17, introducing new AI-driven features and further integration across Apple's ecosystem, along with macOS 'Name', which offered advanced security features and deeper integration with Apple's hardware innovations.",
             "publishdate": "2023-06-07T10:00:00+01:00",
             "tags": [
                 "WWDC2023",
