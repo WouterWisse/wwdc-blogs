@@ -1,44 +1,72 @@
 import os
 import json
+import re
 from jinja2 import Environment, FileSystemLoader
+from datetime import datetime
+
+# Prompt the user for the event year
+event_year = input("Please enter the WWDC Event year (e.g., 2014): ")
+
+# Determine the JSON file path based on the entered year
+json_file_path = os.path.join('data', 'sessions', event_year, 'sessions.json')
+
+# Check if the JSON file exists
+if not os.path.exists(json_file_path):
+    print(f"Error: JSON file for WWDC {event_year} sessions not found.")
+    exit(1)
 
 # Configuration variables
-event_year = "2014"  # Set the year of the event here
 output_directory = os.path.join('..', 'content', 'docs', f'wwdc-{event_year}')
-json_file_path = os.path.join('data', f'wwdc_{event_year}_sessions.json')
+current_date = datetime.now().strftime('%Y-%m-%dT%H:%M:%S%z')
 
 # Create a Jinja2 environment with the template folder
 env = Environment(loader=FileSystemLoader('templates'))
 
+# Load the template for sessions and category index
+session_template = env.get_template('session_index_template.md')
+category_index_template = env.get_template('category_index_template.md')
+
 with open(json_file_path, 'r') as json_file:
     events_data = json.load(json_file)
 
-# Load the template
-template = env.get_template('session_index_template.md')
+def clean_filename(filename):
+    # Remove characters like '&' from the filename
+    return re.sub(r'[^a-zA-Z0-9]+', '-', filename)
 
 for event_category in events_data.get('event', []):
-    category_folder_name = event_category['category']['title'].lower().replace(" ", "-")
+    category_folder_name = clean_filename(event_category['category']['title'].lower())
     category_output_path = os.path.join(output_directory, category_folder_name)
     os.makedirs(category_output_path, exist_ok=True)
 
+    # Render the category index template with the provided data
+    category_index_content = category_index_template.render(
+        category=event_category['category'],
+        categories=events_data.get('event', []),
+        weight=event_category['category']['weight'],
+        title=event_category['category']['title'],
+        icon=event_category['category']['icon'],
+        description=f"WWDC {event_year} - {event_category['category']['title']}",
+        date=current_date,
+        publishdate=current_date
+    )
+
+    # Write the category index to the category folder
+    category_index_file_path = os.path.join(category_output_path, '_index.md')
+    with open(category_index_file_path, 'w') as category_index_file:
+        category_index_file.write(category_index_content)
+
     for session in event_category.get('sessions', []):
-        session_folder_name = session['title'].lower().replace(" ", "-")
-        session_output_path = os.path.join(category_output_path, session_folder_name)
-        os.makedirs(session_output_path, exist_ok=True)
+        session_file_name = clean_filename(session['title'].lower()) + '.md'
+        session_file_path = os.path.join(category_output_path, session_file_name)
 
-        # Check if 'draft' key exists before accessing it
-        draft = session.get('draft', False)
-        session['draft'] = str(draft).lower()
-
-        # Convert 'toc' to lowercase string if it exists
-        toc = session.get('toc', False)
-        if toc is not False:
-            session['toc'] = str(toc).lower()
+        # Set date and publishdate to current date
+        session['date'] = current_date
+        session['publishdate'] = current_date
 
         # Render the template with session data
-        index_content = template.render(session)
+        index_content = session_template.render(session)
 
-        with open(os.path.join(session_output_path, '_index.md'), 'w') as index_file:
-            index_file.write(index_content)
+        with open(session_file_path, 'w') as session_file:
+            session_file.write(index_content)
 
-print(f"Folders and _index.md files created in '{output_directory}' successfully.")
+print(f"WWDC Sessions and Category Index successfully set up in '{output_directory}'.")

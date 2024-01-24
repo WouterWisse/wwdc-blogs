@@ -8,8 +8,5 @@ icon = "{{ icon }}"
 toc = true
 description = "{{ description }}"
 publishdate = "{{ publishdate }}"
-tags = {{ tags }}
+tags = []
 +++
-
-# Coming Soon
-This blog is currently under development. Please check back later for updates.
