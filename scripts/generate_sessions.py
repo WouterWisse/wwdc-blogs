@@ -33,6 +33,7 @@ def clean_filename(filename):
     # Remove characters like '&' from the filename
     return re.sub(r'[^a-zA-Z0-9]+', '-', filename)
 
+event_category_index = 1
 for event_category in events_data.get('event', []):
     category_folder_name = clean_filename(event_category['category']['title'].lower())
     category_output_path = os.path.join(output_directory, category_folder_name)
@@ -42,12 +43,13 @@ for event_category in events_data.get('event', []):
     category_index_content = category_index_template.render(
         category=event_category['category'],
         categories=events_data.get('event', []),
-        weight=event_category['category']['weight'],
+        weight=event_category_index,
         title=event_category['category']['title'],
         icon=event_category['category']['icon'],
         description=f"WWDC {event_year} - {event_category['category']['title']}",
         date=current_date,
-        publishdate=current_date
+        publishdate=current_date,
+        tags=event_category['category']['tags']
     )
 
     # Write the category index to the category folder
@@ -55,6 +57,7 @@ for event_category in events_data.get('event', []):
     with open(category_index_file_path, 'w') as category_index_file:
         category_index_file.write(category_index_content)
 
+    session_index = 1
     for session in event_category.get('sessions', []):
         session_file_name = clean_filename(session['title'].lower()) + '.md'
         session_file_path = os.path.join(category_output_path, session_file_name)
@@ -62,6 +65,9 @@ for event_category in events_data.get('event', []):
         # Set date and publishdate to current date
         session['date'] = current_date
         session['publishdate'] = current_date
+        session['weight'] = session_index
+        session['tags'] = session.get('tags', []) + event_category['category']['tags'] # also add the category tags.
+        session_index += 1
 
         # Render the template with session data
         index_content = session_template.render(session)
@@ -69,4 +75,5 @@ for event_category in events_data.get('event', []):
         with open(session_file_path, 'w') as session_file:
             session_file.write(index_content)
 
+    event_category_index += 1
 print(f"WWDC Sessions and Category Index successfully set up in '{output_directory}'.")

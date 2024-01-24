@@ -8,5 +8,5 @@ icon = "{{ icon }}"
 toc = true
 description = "{{ description }}"
 publishdate = "{{ publishdate }}"
-tags = []
+tags = {{ tags }}
 +++
